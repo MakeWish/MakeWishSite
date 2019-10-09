@@ -1,0 +1,81 @@
+body {
+	background-color: #f5f5f5;
+	color: #0a1c2e;
+}
+
+.navbar-b {
+	transition: all 0.5s ease-in-out;
+	background-color: transparent;
+	padding-top: 1.563rem;
+	padding-bottom: 1.563rem;
+	.navbar-brand {
+		font-size: 1.6rem;
+		font-weight: 600;
+	}
+}
+.nav-link {
+	padding: 15px 5px;
+	transition: 0.2s;
+}
+.navbar-toggler span {
+    display: block;
+    background-color: #fff;
+    height: 3px;
+    width: 25px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    left: 0;
+    opacity: 1;
+}
+.nav-item {
+	&::after {
+		content: "";
+		display: block;
+		width: 0px;
+		height: 2px;
+		background: #fff;
+		transition: 0.2s;
+	}
+	&:hover {
+		&::after {
+			width: 100%;
+		}
+	}
+}
+.navbar-b.navbar-trans {
+	.nav-link {
+		text-transform: uppercase;
+		font-weight: 600;
+		color: #fff;
+	}
+	.navbar-brand {
+		color: #fff;
+	}
+}
+.navbar-b.navbar-reduce {
+	.nav-item {
+		&::after {
+			background: #0a1c2e;
+		}
+	}
+	.nav-link {
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+	.navbar-brand {
+		color: #0a1c2e;
+	}
+	transition: all 0.5s ease-in-out;
+	background-color: #f5f5f5;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
+}
+.navbar-b.navbar-b.navbar-reduce {
+	.nav-link {
+		color: #0a1c2e;
+	}
+	.navbar-toggler span {
+		background-color: #0a1c2e;
+	}
+}

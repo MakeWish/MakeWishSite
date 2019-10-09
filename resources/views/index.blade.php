@@ -5,17 +5,9 @@
 </head>
 <body>
 @include('common.navigation')
-<!-- To be replaced -->
-<h5 class="my-5">Make Wish Demo Site</h5>
-<!-- To be replaced -->
-<h5 class="my-5">Make Wish Demo Site</h5>
-<!-- To be replaced -->
-<h5 class="my-5">Make Wish Demo Site</h5>
-<!-- To be replaced -->
-<h5 class="my-5">Make Wish Demo Site</h5>
-<!-- To be replaced -->
-<h5 class="my-5">Make Wish Demo Site</h5>
+
+@yield('content')
+
 @include('common.footer')
-@include('common.footer-scripts')
 </body>
 </html>
