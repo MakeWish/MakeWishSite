@@ -1,3 +1,36 @@
+.about-section {
+  display: block;
+}
+
+.about-section .derek {
+  background: url(/images/banner.jpg?732d07afa3442feb2eeecf7561154fbd) no-repeat fixed center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 55vh;
+}
+
+.about-section .containe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.about-section .containe .first-row,
+.about-section .containe .scnd-row {
+  display: flex;
+}
+
+.about-section .containe .first-row .left-panel,
+.about-section .containe .scnd-row .left-panel {
+  flex: 1;
+}
+
+.about-section .containe .first-row .right-panel,
+.about-section .containe .scnd-row .right-panel {
+  flex: 1;
+}
+
 .footer-dark {
   padding: 10px 0;
   color: #f0f9ff;
