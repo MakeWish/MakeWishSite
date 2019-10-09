@@ -5,7 +5,7 @@
 </head>
 <body>
 @include('common.navigation')
-<h5>Make Wish Demo Site</h5>
+@yield('content')
 @include('common.footer-scripts')
 </body>
 </html>
